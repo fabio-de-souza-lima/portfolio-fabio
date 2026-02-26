@@ -125,7 +125,7 @@ function Contact() {
               ref={recaptchaRef} // Conecta a referência para podermos resetar
               className="mx-auto my-3 g-recaptcha"
               theme="dark"
-              sitekey="6LcBNjUsAAAAALwgG_6-cKKmd8dWKDJyB5NZvKTQ"
+              sitekey="6LcMAHksAAAAAE-PuzqJvQli5ZsHYCKrQzIRRPQk"
               onChange={(value) => setCapValue(value)}
             />
 
