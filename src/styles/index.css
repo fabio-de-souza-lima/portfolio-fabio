@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+        0% { opacity: 0; transform: scale(0.95); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+    
+    --breakpoint-xm: 26.5rem;
+    --animate-fadeIn: fadeIn 0.25s ease-out;
+    --animate-scaleIn: scaleIn 0.25s ease-out;
+
+    --color-card-background: #1A202C;
+}

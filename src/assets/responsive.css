@@ -1,0 +1,38 @@
+/* Trava de segurança contra o "balanço" lateral */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustes para celulares muito pequenos (iPhone SE, etc) */
+@media (max-width: 320px) {
+    #hero h1 { font-size: 1.4rem !important; }
+    #hero .text-4xl { font-size: 2rem !important; } /* Nome Fabio de Souza */
+    #hero img { width: 140px !important; height: 140px !important; }
+}
+
+/* Ajustes para Mobile e Tablet */
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Ajuste para monitores Ultra-Wide */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Remove qualquer margem negativa que possa estar empurrando o site */
+* {
+    box-sizing: border-box;
+}

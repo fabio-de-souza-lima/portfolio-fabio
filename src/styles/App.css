@@ -1,0 +1,21 @@
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --background-color: #061018;
+  --card-background: #1A202C;
+
+  --light-blue: #7F9CF5;
+  --blue: #5A67B8;
+  --dark-blue: #434190;
+
+  --text-color: #B1BDCE;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+* {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}

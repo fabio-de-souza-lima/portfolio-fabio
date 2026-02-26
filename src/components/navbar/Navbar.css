@@ -1,0 +1,26 @@
+nav ul li a {
+  background: linear-gradient(to top, rgba(26, 32, 44, 0) 0%, rgba(26, 32, 44, 0) 50%,
+      rgba(91, 132, 255, 0.4) 50%, rgb(91, 132, 255, 0.4) 100%);
+  background-size: 100% 200%;
+  background-position: 0 -100%;
+  transition: background-position 0.3s;
+  padding: 1.12rem 1.25rem;
+}
+
+nav ul li a:hover {
+  background-position: 0 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+@media only screen and (max-width: 1023px) {
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav ul li a {
+    padding: 1rem 0;
+    width: 100%;
+  }
+}

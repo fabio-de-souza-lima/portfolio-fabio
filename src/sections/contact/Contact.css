@@ -1,0 +1,156 @@
+/* 1. CONTAINER PRINCIPAL (#contact) */
+#contact {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* 2. INPUTS E TEXTAREA */
+input,
+textarea {
+    background-color: var(--card-background); /* Ajustado para bater com seu tema */
+    transition: all 0.2s ease;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--blue);
+    color: white;
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+}
+
+input:hover,
+textarea:hover {
+    border: 1px solid var(--light-blue);
+    box-shadow: 0 0 8px rgba(0, 119, 255, 0.2);
+}
+
+input:active,
+textarea:active {
+    transform: scale(0.99);
+}
+
+.input-error {
+    border-color: #ef4444; /* Cor vermelha para erro */
+}
+
+/* 3. RECAPTCHA (Ajustado para evitar o erro das fotos) */
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+    width: 100%;
+    min-height: 78px; /* Evita pulos de layout */
+}
+
+/* JUSTIFICATIVA: No celular, o Captcha fixo em 304px estoura a tela. 
+   O scale(0.78) que você usou é perfeito, mas adicionamos o height 
+   para o desafio de imagens (ônibus/semáforo) não ficar cortado.
+*/
+@media (max-width: 450px) {
+    .g-recaptcha > div {
+        transform: scale(0.78) !important;
+        transform-origin: center top;
+        margin-bottom: -15px; /* Ajusta o espaço que o scale "sobra" */
+    }
+}
+
+/* 4. CARDS DE CONTATO */
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    background-color: var(--card-background);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-option svg {
+    color: var(--light-blue);
+    margin-bottom: 1rem;
+}
+
+.contact-option h3 {
+    font-size: 1.25rem;
+    color: var(--light-blue);
+    font-weight: 500;
+}
+
+.contact-option p {
+    font-size: 1rem;
+    color: white;
+    word-break: break-all;
+}
+
+/* 5. TOAST (Mensagem de Sucesso) */
+.toast-success {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: linear-gradient(135deg, #0044ff 0%, #00d4ff 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 85, 255, 0.4), 0 15px 45px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10000;
+    overflow: hidden; 
+    animation: 
+        slideInCustom 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards, 
+        fadeOutCustom 1.0s ease-in-out 9s forwards;
+}
+
+.toast-success::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    animation: progressCustom 9s linear forwards;
+}
+
+/* ANIMAÇÕES DO TOAST */
+@keyframes slideInCustom {
+    from { transform: translateX(150%) scale(0.7); opacity: 0; }
+    to { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+@keyframes fadeOutCustom {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(100px); }
+}
+
+@keyframes progressCustom {
+    from { width: 100%; }
+    to { width: 0%; }
+}
+
+/* AJUSTE MOBILE DO TOAST */
+@media (max-width: 640px) {
+    .toast-success {
+        right: 15px;
+        left: 15px;
+        bottom: 25px;
+        padding: 15px 20px;
+        gap: 12px;
+        border-radius: 12px;
+    }
+}
