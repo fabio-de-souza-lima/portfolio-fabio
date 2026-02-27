@@ -6,7 +6,11 @@ import "../../assets/responsive.css";
 function Home() {
   return (
     <>
-      <div className="flex justify-center bg-(--card-background) py-16 max-sm:px-6" id="hero">
+      <div 
+        className="flex justify-center bg-(--card-background) py-16 max-sm:px-6" 
+        id="hero"
+        onContextMenu={(e) => e.preventDefault()} // bloqueia clique direito no container
+      >
         {/* Grid principal: 1 coluna no mobile, 2 no tablet, 3 no desktop */}
         <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-0 items-center">
           
@@ -14,6 +18,8 @@ function Home() {
           <img 
             src="https://i.ibb.co/JR9wWVZ9/minha-foto.jpg"
             alt="Foto Fabio de Souza"
+            draggable="false" // bloqueia arrastar
+            onContextMenu={(e) => e.preventDefault()} // bloqueia clique direito na imagem
             className="max-h-52 w-52 aspect-square object-cover rounded-full place-self-center sm:place-self-start lg:place-self-center sm:col-span-2 lg:col-span-1"
           />
 
@@ -29,19 +35,18 @@ function Home() {
             </h2>
 
             <a 
-              href="https://drive.google.com/uc?export=download&id=19t4DT7i7CKDL8bSLGJHCYPqnOShzCTbx" 
+              href="https://drive.google.com/file/d/1b-chgLFCpeo9aEG2X_yfxkidYRf8bQ2V/view?usp=sharing" 
               target="_blank" 
               rel="noreferrer"
               className="flex py-3 px-6 bg-(--blue) gap-2 text-white rounded-lg max-w-[12rem] transition duration-200 hover:bg-(--dark-blue) cursor-pointer items-center justify-center"
             >
               <HiDocumentDownload size={24} />
-              <span className="font-medium">Baixar CV</span>
+              <span className="font-medium">Ver CV</span>
             </a>
           </div>
 
-          {/* Seção de Contatos Social - ALINHAMENTO CORRIGIDO */}
+          {/* Seção de Contatos Social */}
           <div className="flex items-center justify-center lg:justify-start w-full">
-            {/* min-w garante que o bloco tenha uma base fixa no mobile */}
             <div className="flex flex-col gap-6 text-(--text-color) font-medium items-start min-w-[240px] sm:min-w-0">
               
               {/* GitHub */}
@@ -85,8 +90,8 @@ function Home() {
             </div>
           </div>
 
-        </div> {/* Fecha container */}
-      </div> {/* Fecha hero */}
+        </div>
+      </div>
     </>
   )
 }
