@@ -12,6 +12,7 @@ function Home() {
         onContextMenu={(e) => e.preventDefault()} // bloqueia clique direito no container
         onDragStart={(e) => e.preventDefault()}   // bloqueia arrastar
         onTouchStart={(e) => e.preventDefault()}  // bloqueia toque longo em mobile
+        onMouseDown={(e) => e.preventDefault()}   // reforço extra contra copiar
       >
         {/* Grid principal: 1 coluna no mobile, 2 no tablet, 3 no desktop */}
         <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-0 items-center">
@@ -23,6 +24,7 @@ function Home() {
             draggable="false" // bloqueia arrastar
             onContextMenu={(e) => e.preventDefault()} // bloqueia clique direito na imagem
             onTouchStart={(e) => e.preventDefault()}  // bloqueia toque longo em mobile
+            onMouseDown={(e) => e.preventDefault()}   // reforço extra contra copiar
             className="max-h-52 w-52 aspect-square object-cover rounded-full place-self-center sm:place-self-start lg:place-self-center sm:col-span-2 lg:col-span-1"
           />
 
