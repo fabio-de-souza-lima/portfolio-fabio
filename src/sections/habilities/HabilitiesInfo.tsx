@@ -83,7 +83,7 @@ const Techs = [
       {
         id: 8,
         name: "Node.js",
-        image: "https:i.ibb.co/XpBwPdb/modern-nodejs-can-do-that-4yy-F3e-Xd-lg-X1h.webp"
+        image: "https://i.ibb.co/Zp31gSJX/pngwing-com.png"
       }
     ]
   },
@@ -135,7 +135,7 @@ const Techs = [
         */
     ]
   },
-  
+   /*
   {
     name: "Metodologias",
     list: [
@@ -151,6 +151,7 @@ const Techs = [
       }
     ]
   }
+      */
 ];
 
 export default Techs
