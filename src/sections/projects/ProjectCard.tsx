@@ -7,16 +7,17 @@ interface ProjectCardProps {
 }
 
 function ProjectCard({ project, onSelect }: ProjectCardProps) {
-
   return (
     <AnimatedFadeIn>
-      <div onClick={onSelect}
-        className="group cursor-pointer flex flex-col w-60 transition-all duration-250 hover:scale-110 bg-(--card-background) shadow-lg/40 rounded-lg overflow-hidden">
-
+      <div
+        onClick={onSelect}
+        className="group cursor-pointer flex flex-col w-60 transition-all duration-250 hover:scale-110 bg-(--card-background) shadow-lg/40 rounded-lg overflow-hidden select-none"
+      >
         <div className="relative rounded-lg overflow-hidden">
           <img
             src={project.prints[0]}
-            className="w-full object-cover"
+            className="w-full object-cover pointer-events-none select-none"
+            alt={project.name}
           />
 
           {/* Camada de degradê fixa na parte de baixo */}
@@ -38,21 +39,27 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
               transition-opacity duration-300
               group-hover:opacity-100"
           ></div>
-
         </div>
 
         <div className="mx-3 mb-4 -mt-10 z-0 h-8 overflow-hidden">
-          <p className="font-semibold text-white text-2xl transition duration-300 group-hover:-translate-y-8">{project.name}</p>
-          <p className="font-semibold text-white text-2xl transition duration-300 group-hover:-translate-y-8">Ver detalhes</p>
+          <p className="font-semibold text-white text-2xl transition duration-300 group-hover:-translate-y-8 select-none">
+            {project.name}
+          </p>
+          <p className="font-semibold text-white text-2xl transition duration-300 group-hover:-translate-y-8 select-none">
+            Ver detalhes
+          </p>
         </div>
 
-        <div className="flex justify-center gap-3 pb-2">
-
-          {
-            project.mainTechnologies.map((tech) => (
-              <img src={tech.image} alt={tech.name} title={tech.name} className="h-8 hover:scale-110 transition-all duration-250" />
-            ))
-          }
+        <div className="flex justify-center gap-3 pb-2 select-none">
+          {project.mainTechnologies.map((tech) => (
+            <img
+              key={tech.name}
+              src={tech.image}
+              alt={tech.name}
+              title={tech.name}
+              className="h-8 hover:scale-110 transition-all duration-250 pointer-events-none select-none"
+            />
+          ))}
         </div>
       </div>
     </AnimatedFadeIn>

@@ -16,41 +16,54 @@ interface ExperienceProps {
   experience: Experience
 }
 
-
 function ExperienceCard({ experience }: ExperienceProps) {
   return (
     <AnimatedFadeIn>
-      <div className="bg-(--card-background) rounded-2xl p-9 text-(--text-color) shadow-lg/40">
-      <div className="flex gap-3 justify-between items-center max-xm:items-start max-xm:flex-col-reverse">
-        <img src={experience.companyLogo} alt={`Logo ` + experience.companyName}
-          className="w-32" />
-        <span className="font-medium">{experience.beginningDate} - {experience.endingDate}</span>
-      </div>
+      <div className="bg-(--card-background) rounded-2xl p-9 text-(--text-color) shadow-lg/40 select-none">
+        <div className="flex gap-3 justify-between items-center max-xm:items-start max-xm:flex-col-reverse">
+          <img 
+            src={experience.companyLogo} 
+            alt={`Logo ` + experience.companyName}
+            className="w-32 pointer-events-none select-none" 
+          />
+          <span className="font-medium select-none">
+            {experience.beginningDate} - {experience.endingDate}
+          </span>
+        </div>
 
-      <h3 className="font-semibold text-white py-6 text-xl">{experience.role}</h3>
+        <h3 className="font-semibold text-white py-6 text-xl select-none">
+          {experience.role}
+        </h3>
 
-      <p className="">{experience.description}</p>
+        <p className="select-none">{experience.description}</p>
 
-      {
-        experience.technologies ? (
-
+        {experience.technologies ? (
           <>
-            <h4 className="font-medium text-(--light-blue) pb-3 pt-5">Tecnologias:</h4>
+            <h4 className="font-medium text-(--light-blue) pb-3 pt-5 select-none">
+              Tecnologias:
+            </h4>
 
-            <div className="flex gap-3 flex-wrap">
-              {
-                experience.technologies.map((tech) => (
-                  <img src={tech.image} alt={tech.name} title={tech.name} className="h-8 hover:scale-110 transition-all duration-250" />
-                ))
-              }
+            <div className="flex gap-3 flex-wrap select-none">
+              {experience.technologies.map((tech) => (
+                <img 
+                  key={tech.name}
+                  src={tech.image} 
+                  alt={tech.name} 
+                  title={tech.name} 
+                  className="h-8 hover:scale-110 transition-all duration-250 pointer-events-none select-none" 
+                />
+              ))}
             </div>
           </>
         ) : (
-          <p className="pt-5"><span className="font-medium text-(--light-blue) pr-2">Habilidades:</span>{experience.skills}</p>
-        )
-      }
-
-    </div>
+          <p className="pt-5 select-none">
+            <span className="font-medium text-(--light-blue) pr-2 select-none">
+              Habilidades:
+            </span>
+            {experience.skills}
+          </p>
+        )}
+      </div>
     </AnimatedFadeIn>
   )
 }
