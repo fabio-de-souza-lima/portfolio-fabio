@@ -18,7 +18,7 @@ const ProjectsInfo = [
   {
     id: 8,
     name:  "Portfólio",
-    about: "Este portfólio é a materialização da minha filosofia de trabalho: onde a excelência visual encontra uma arquitetura escalável, garantindo que cada linha de código seja tão performática quanto a interface que o usuário vê. \n\n Desenvolvido com React + TypeScript e Vite, este projeto vai além da UI para demonstrar a aplicação prática de boas práticas de engenharia, como estado centralizado e separação de responsabilidades. \n\n ",
+    about: "Este portfólio une estética e arquitetura escalável, garantindo que a eficiência do código seja tão alta quanto a qualidade da interface. \n\n Desenvolvido com React + TypeScript e Vite, este projeto vai além da UI para demonstrar a aplicação prática de boas práticas de engenharia, como estado centralizado e separação de responsabilidades. \n\n ",
     prints: [
       "https://i.ibb.co/LDP9qSGT/potifolio-fabiao.png"
     ],
