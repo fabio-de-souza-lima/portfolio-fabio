@@ -55,7 +55,7 @@ const ProjectsInfo = [
   {
     id: 5,
     name: "Portfólio",
-    about: "Portfólio digital moderno que apresenta competências estratégicas e projetos web de forma clara, técnica e profissional.. \n\nO que está funcionando muito bem: \n- Identidade Visual: O contraste entre o azul e o fundo escuro passa seriedade.\n- Ícones de Tecnologias: O uso dos logos (JS, HTML, CSS, Git) ajuda o recrutador a identificar seu stack instantaneamente. \n- Chamada para Ação: Os botões Acessar projeto e Acessar repositório estão bem destacados.",
+    about: "Portfólio digital moderno que apresenta competências estratégicas e projetos web de forma clara, técnica e profissional.. \n\nO que está funcionando muito bem: \n- Identidade Visual: O contraste entre o azul e o fundo escuro passa seriedade.\n- Ícones de Tecnologias: O uso dos logos (JS, HTML, CSS, Git) ajuda o recrutador a identificar seu stack instantaneamente.",
     prints: [
       "https://i.ibb.co/60JwRr5p/potifolio1.png"
     ],
@@ -81,7 +81,7 @@ const ProjectsInfo = [
   {
     id: 3,
     name: "Jogo da Memória",
-    about: "Desenvolvi um Jogo da Memória temático utilizando JavaScript Vanilla, implementando lógica de estado para validação de pares, algoritmo de baralhamento Fisher-Yates e interface responsiva com animações CSS 3D, tudo publicado via Vercel para garantir uma experiência de utilizador fluida e moderna. \n\nO projeto une UX intuitiva e temática nostálgica a um código limpo e modular, garantindo alta performance, escalabilidade e total compatibilidade responsiva entre dispositivos.",
+    about: "Jogo da Memória em JS Vanilla com lógica de estados e algoritmo Fisher-Yates. Possui interface responsiva com animações CSS 3D e deploy via Vercel. O projeto une UX intuitiva a um código limpo e modular, garantindo performance, escalabilidade e total compatibilidade entre dispositivos.",
     prints: [
       "https://i.ibb.co/M5BvkKbJ/jogo-da-memoria.png"
     ],
@@ -107,7 +107,7 @@ const ProjectsInfo = [
   {
     id: 1,
     name: "Sonia Bolos",
-    about: "O site institucional desenvolvido para a Sonia Bolos e Salgados é uma plataforma gastronômica completa que une um design apetitoso a uma navegação funcional. Focada em destacar a qualidade artesanal dos produtos, a interface conta com um menu detalhado de bolos, salgados e doces, além de seções de depoimentos e integração direta com o WhatsApp para encomendas. O projeto demonstra expertise em criar experiências digitais que valorizam a identidade visual do cliente e otimizam o atendimento comercial no ambiente web.",
+    about: "O site da Sonia Bolos e Salgados une design apetitoso e navegação funcional. Com menu detalhado, depoimentos e integração ao WhatsApp, a plataforma destaca a qualidade artesanal e otimiza o atendimento. Um projeto focado em experiência digital, identidade visual e conversão comercial.",
     prints: [
       "https://i.ibb.co/tPTgNgkF/soniabolos.png"
     ],
