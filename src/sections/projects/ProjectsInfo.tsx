@@ -30,7 +30,7 @@ const ProjectsInfo = [
   {
     id: 7,
     name:  "Web Escolar",
-    about: "Desenvolvido com React + TypeScript e Vite, este projeto vai além da simples construção de uma interface de usuário. Ele demonstra, de forma prática e detalhada, a aplicação consistente de boas práticas de engenharia de software, como o uso de estado centralizado, a separação clara de responsabilidades entre componentes e camadas, além de uma arquitetura escalável que garante performance e manutenibilidade. O objetivo é mostrar não apenas a estética visual, mas também a robustez técnica que sustenta cada funcionalidade, evidenciando como design e código podem caminhar juntos para criar soluções modernas, eficientes e duradouras. \n\n ",
+    about: " Mais do que um exercício técnico, este portal é uma ferramenta de transformação social. Ao centralizar as trilhas de aprendizado do Governo do Paraná, o projeto remove barreiras entre o estudante e o conhecimento. Ver a tecnologia servindo como ponte para o futuro de jovens do ensino público é o que realmente valida cada linha de código escrita. \n\n Tecnologia e educação unidas para transformar realidades, abrindo novas portas para o futuro jovem.",
     prints: [
       "https://i.ibb.co/fVWjQKKk/escola.png"
     ],
