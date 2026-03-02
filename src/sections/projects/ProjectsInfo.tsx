@@ -30,7 +30,7 @@ const ProjectsInfo = [
   {
     id: 7,
     name:  "Web Escolar",
-    about: "O projeto desenvolvido para o Colégio Estadual Professora Benedita Rosa Rezende é um portal moderno e responsivo que utiliza as tecnologias HTML5, CSS3, JavaScript e Bootstrap 5 para otimizar a comunicação escolar. Com foco na usabilidade e na organização modular, a plataforma se destaca por centralizar o acesso a informações importantes e integrar diversos hyperlinks de cursos gratuitos oferecidos pelo Governo do Paraná, promovendo o desenvolvimento de novas habilidades e facilitando a busca por oportunidades educacionais de forma prática e funcional. \n\n  \n\n ",
+    about: "Desenvolvido com React + TypeScript e Vite, este projeto vai além da simples construção de uma interface de usuário. Ele demonstra, de forma prática e detalhada, a aplicação consistente de boas práticas de engenharia de software, como o uso de estado centralizado, a separação clara de responsabilidades entre componentes e camadas, além de uma arquitetura escalável que garante performance e manutenibilidade. O objetivo é mostrar não apenas a estética visual, mas também a robustez técnica que sustenta cada funcionalidade, evidenciando como design e código podem caminhar juntos para criar soluções modernas, eficientes e duradouras. \n\n ",
     prints: [
       "https://i.ibb.co/fVWjQKKk/escola.png"
     ],
