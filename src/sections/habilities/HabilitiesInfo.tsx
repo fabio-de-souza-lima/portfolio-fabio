@@ -15,26 +15,31 @@ const Techs = [
       },
       {
         id: 2,
+        name: "Angular",
+        image: "https://i.ibb.co/prnpt2NC/icons8-angular-50.png"
+      },
+      {
+        id: 3,
         name: "Tailwind CSS",
         image: "https://ik.imagekit.io/j8alkuh75t/Portf%C3%B3lio/Tecnologies%20Icons/tailwind.png?updatedAt=1760644065483"
       },
       {
-        id: 3,
+        id: 4,
         name: "JavaScript",
         image: "https://ik.imagekit.io/j8alkuh75t/Portf%C3%B3lio/Tecnologies%20Icons/javascript.png?updatedAt=1760644065554"
       },
       {
-        id: 4,
+        id: 5,
         name: "TypeScript",
         image: "https://ik.imagekit.io/j8alkuh75t/Portf%C3%B3lio/Tecnologies%20Icons/typescript.png?updatedAt=1760644065530"
       },
       {
-        id: 5,
+        id: 6,
         name: "HTML5",
         image: "https://ik.imagekit.io/j8alkuh75t/Portf%C3%B3lio/Tecnologies%20Icons/html.png?updatedAt=1760644065661"
       },
       {
-        id: 6,
+        id: 7,
         name: "CSS3",
         image: "https://ik.imagekit.io/j8alkuh75t/Portf%C3%B3lio/Tecnologies%20Icons/css.png?updatedAt=1760644065575"
       }
