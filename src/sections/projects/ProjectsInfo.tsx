@@ -16,13 +16,25 @@ export type Project = {
 
 const ProjectsInfo = [
   {
+    id: 9,
+    name:  "Lanche do Fabão",
+    about: "O Lanche do Fabão une performance extrema e UX mobile-first em uma arquitetura Vue + Vite, garantindo que a eficiência do fluxo de pedidos via WhatsApp seja tão alta quanto a qualidade da interface e a acessibilidade do código. \n\n ",
+    prints: [
+      "https://i.ibb.co/bM5Zzgp3/lanche-do-fabiao.png"
+    ],
+    technologies: addTechs([  "JavaScript","HTML5", "CSS3", "Git", "Vue", "Vite","Tailwind CSS"]),
+    mainTechnologies: addTechs(["Spring Boot", "React", "MySQL"]),
+    deploy: "https://lanchedofabao-6gsx.vercel.app/",
+    completionDate: "23 de Março de 2026"
+  },
+  {
     id: 8,
     name:  "Portfólio",
     about: "Este portfólio une estética e arquitetura escalável, garantindo que a eficiência do código seja tão alta quanto a qualidade da interface. \n\n Desenvolvido com React + TypeScript e Vite, este projeto vai além da UI para demonstrar a aplicação prática de boas práticas de engenharia, como estado centralizado e separação de responsabilidades. \n\n ",
     prints: [
       "https://i.ibb.co/LDP9qSGT/potifolio-fabiao.png"
     ],
-    technologies: addTechs([  "JavaScript","HTML5", "CSS3", "Git"]),
+    technologies: addTechs([  "JavaScript","HTML5", "CSS3", "Git","Vite"]),
     mainTechnologies: addTechs(["Spring Boot", "React", "MySQL"]),
     deploy: "https://colegio-brr.vercel.app/index.html",
     completionDate: "26 de Fevereiro de 2026"
@@ -46,7 +58,7 @@ const ProjectsInfo = [
     prints: [
       "https://i.ibb.co/m55GPYGs/webcarros.png"
     ],
-    technologies: addTechs([ "React", "HTML5", "CSS3", "TypeScript", "Tailwind CSS", "Firebase", "Git"]),
+    technologies: addTechs([ "React", "HTML5", "CSS3", "TypeScript", "Tailwind CSS", "Firebase", "Git","Vite"]),
     mainTechnologies: addTechs(["Spring Boot", "React", "MySQL"]),
     deploy: "https://webcarros-eosin.vercel.app/",
     github: "https://github.com/fabio-de-souza-lima/webcarros",

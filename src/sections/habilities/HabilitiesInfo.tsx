@@ -42,6 +42,16 @@ const Techs = [
         id: 7,
         name: "CSS3",
         image: "https://ik.imagekit.io/j8alkuh75t/Portf%C3%B3lio/Tecnologies%20Icons/css.png?updatedAt=1760644065575"
+      },
+      {
+        id: 7,
+        name: "Vite",
+        image: "https://i.ibb.co/kV9fq50F/Vite-js.png"
+      },
+      {
+        id: 7,
+        name: "Vue",
+        image: "https://i.ibb.co/LX2rLm29/Vue-js.png"
       }
     ]
   },
